@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おとなと対戦だ！</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home">Homeに戻る</a>
+    </header>
+    <div id="cpu2">
+        <div class="cpu2">
+            <h2>対戦相手：<span class="cpu_name">おとな</span></h2>
+            <h2>5回対決して、3回以上勝たないと行けないぞ！</h2>
+            <img src="img/otona.png" class="cpu_img">
+        </div>
+        <div class="jyanken">
+            <button onclick="R2_Click(0);"  class="jyanken_hand"><img src="img/gu.png"></button>
+            <button onclick="R2_Click(1);" class="jyanken_hand"><img src="img/tyoki.png"></button>
+            <button onclick="R2_Click(2);" class="jyanken_hand"><img src="img/pa.png"></button>
+        </div>
+        <p><span class="cpu2_hand"></span></p>
+        <p>勝負の回数：<span class="count_battle"></span></p>
+        <p>勝ち：<span class="count_win"></span></p>
+        <p>負け：<span class="count_lose"></span></p>
+        <p>あいこ：<span class="count_draw"></span></p>
+    </div>
+        <div class="if_win2">
+            <h1 id="cpu_hand"></h1>
+            <h1>結果は…</h1>
+            <p>"<span class="player_name"></span>"の勝ちだ！おめでとう！</p>
+            <p>次の挑戦者へ挑戦だ！！！</p>
+            <button href="cpu3.html" class="next2">進む！</button>
+            <p><button class="tweet">結果をツイートする</button></p>
+
+        </div>
+        </div>
+        <div class="if_lose2">
+            <h1>結果は…</h1>
+            <p>残念…！挑戦失敗だ…</p>
+            <button class="furidashi">もう一度挑戦する！！</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>

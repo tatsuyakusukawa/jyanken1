@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- linkを押してtabを押すと候補が出てくるよ -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>こどもと対戦！</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home">Homeに戻る</a>
+  </header>
+  <main>
+    <div id="cpu1">
+      <div class="cpu1">
+        <h2>対戦相手：<span class="cpu_name">こども</span></h2>
+        <h2>ここは一発勝負！</h2>
+        <img src="img/kodomo.png" class="cpu_img">
+      </div>
+    <div class="jyanken">
+      <button onclick="R1_Click(0);"  class="jyanken_hand"><img src="img/gu.png"></button>
+      <button onclick="R1_Click(1);" class="jyanken_hand"><img src="img/tyoki.png"></button>
+      <button onclick="R1_Click(2);" class="jyanken_hand"><img src="img/pa.png"></button>
+    </div>
+    </div>
+    <div class="if_win1">
+      <h1 id="cpu_hand"></h1>
+      <h1>結果は…</h1>
+      <p><span class="player_name"></span>の勝ちだ！おめでとう！</p>
+      <p>次の挑戦者へ挑戦だ！！！</p>
+      <button class="next1">進む！</button>
+      <p><button class="tweet">結果をツイートする</button></p>
+    </div>
+    <div class="if_draw1">
+      <h1 id="cpu_hand"></h1>
+      <h1>結果は…</h1>
+      <p>引き分け！</p>
+      <button class="furidashi">もう一度挑戦する！！</button>
+    </div>
+    <div class="if_lose1">
+      <h1 id="cpu_hand"></h1>
+      <h1>結果は…</h1>
+      <p>残念…！挑戦失敗だ…</p>
+      <button class="furidashi">もう一度挑戦する！！</button>
+    </div>
+
+  </main>
+
+
+  <!-- jsを紐づける,Jqureryが先！！！-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
